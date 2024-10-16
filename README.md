@@ -6,7 +6,7 @@ If you are like me, and you go to Ikea to build stuff follow the below steps;
 otherwise just run the following command from the CMD or Shell (provided you installed `docker`)
 
 ```sh
-docker run -ti blumareks/terraform-ibmcloud:0.0.3 /bin/bash
+docker run -ti blumareks/terraform-ibmcloud:1.0.0 /bin/bash
 ```
 
 ## download this repo
