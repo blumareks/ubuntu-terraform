@@ -55,12 +55,13 @@ Now as the image is downloaded and the Docker Desktop running you can build your
 you should be in the `ubuntu-terraform` directory (check with `dir` or `pwd` (in Shell) command)
 
 ```sh
-docker build -t blumareks/terraform-ibmcloud:0.0.1 .
+docker build -t blumareks/terraform-ibmcloud:1.0.0 .
 ```
 
+## run the container based on this image
 Finally you can run the image:
 ```sh
-docker run -ti blumareks/terraform-ibmcloud:0.0.3 /bin/bash
+docker run -ti blumareks/terraform-ibmcloud:1.0.0 /bin/bash
 root@2c05157a4b9d:/# ls
 LICENSE.txt  dev                              home   media  proc  sbin  terraform_1.9.8_linux_amd64.zip  var
 bin          elasticsearch-kibana-codeengine  lib    mnt    root  srv   tmp
@@ -71,8 +72,10 @@ LICENSE  README.md  terraform  terraform.tfvars
 root@2c05157a4b9d:/elasticsearch-kibana-codeengine# nano terraform.tfvars
 ```
 
-edit your terraform.tfvars file
+## configure your terraform script with your details
+edit your `terraform.tfvars` file
 
+type `nano terraform.tfvars`
 
 Now edit the fields:
 ```sh
