@@ -1,6 +1,14 @@
 # ubuntu-terraform
 Ubuntu terraform docker image with ibm cloud cli
 
+
+If you are like me, and you go to Ikea to build stuff follow the below steps;
+otherwise just run the following command from the CMD or Shell (provided you installed `docker`)
+
+```sh
+docker build -t blumareks/terraform-ibmcloud:0.0.3 .
+```
+
 ## download this repo
 lets start with the steps
 
