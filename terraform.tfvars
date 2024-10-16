@@ -1,0 +1,6 @@
+ ibmcloud_api_key = "<your_api_key_from_step_1>"
+ region = "<IBM region to deploy the Code Engine application>"
+ es_host = "<the hostname of your elasticsearch deployment>"
+ es_port = "<the port number  of your elasticsearch deployment>"
+ es_username = "<the username of your elasticsearch deployment>"
+ es_password = "<the password of your elasticsearch user>"
