@@ -1,3 +1,4 @@
+# by  Marek Sadowski 20241020
 # Use the latest Ubuntu LTS as the base image
 FROM ubuntu
 
@@ -32,4 +33,11 @@ RUN ibmcloud help \
     && rm terraform_1.9.8_linux_amd64.zip
 
 COPY terraform.tfvars ./elasticsearch-kibana-codeengine
+
+# Install  kubectr
+RUN curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-archive-keyring.gpg \
+    && echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list \
+    && apt update \
+    && apt install -y kubectl \
+    && kubectl version --output=yaml
 
