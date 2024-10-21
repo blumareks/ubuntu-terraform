@@ -31,5 +31,5 @@ RUN ibmcloud help \
     && apt install -y nano \
     && rm terraform_1.9.8_linux_amd64.zip
 
-COPY terraform.tfvars ./elasticsearch-kibana-codeengine
+COPY terraform.tfvars ./elasticsearch-kibana-codeengine/terraform
 
